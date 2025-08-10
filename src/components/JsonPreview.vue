@@ -8,9 +8,11 @@
           Updated JSON
         </CardTitle>
       </CardHeader>
-      <CardContent class="p-0 flex-grow rounded-b-[2rem] overflow-hidden">
+      <CardContent
+        class="p-0 flex-grow rounded-b-[2rem] overflow-hidden flex flex-col"
+      >
         <div
-          class="max-h-[500px] overflow-auto bg-gray-900 text-gray-100 text-sm font-mono rounded-b-[2rem]"
+          class="overflow-auto bg-gray-900 text-gray-100 text-sm font-mono rounded-b-[2rem] flex-grow"
         >
           <pre class="p-4 whitespace-pre-wrap" v-html="formattedJson"></pre>
         </div>
